@@ -14,7 +14,7 @@ func main() {
 	router := gin.Default()
 	router.GET("/ping", pong)
 
-	err := router.Run(":8080")
+	err := router.Run(":1234")
 	if err != nil {
 		fmt.Printf("error: %s", err.Error())
 	}
